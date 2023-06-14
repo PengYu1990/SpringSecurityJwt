@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/jwt?currentSchema=public
+    username: postgres
+    password: 123456
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    jackson:
+      time-zone: Europe/Dublin
+    properties:
+      hibernate:
+        format_sql: true
+
+cors:
+  allowed-origins: "*"
+  allowed-methods: "*"
+  allowed-headers: "*"
+  exposed-headers: "*"
